@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="${#request.getContextPath()}+'/'">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="stu/add" method="post">
+        姓名：<input type="text" name="stuName"/><br>
+        年龄：<input type="text" name="age"/><br>
+        性别：<input type="text" name="sex"/><br>
+        班级：<input type="text" name="tcName"/><br>
+        <input type="submit" value="添加">
+    </form>
+</body>
+</html>

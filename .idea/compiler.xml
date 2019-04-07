@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="stu_consumer" />
+        <module name="student_server" />
+        <module name="tclass_consumer" />
+        <module name="tclass_server" />
+        <module name="test2_api" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="stu_consumer" target="1.8" />
+      <module name="student_server" target="1.8" />
+      <module name="tclass_consumer" target="1.8" />
+      <module name="tclass_server" target="1.8" />
+      <module name="test2" target="1.8" />
+      <module name="test2_api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

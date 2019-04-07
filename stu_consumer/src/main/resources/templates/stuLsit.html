@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="${#request.getContextPath()}+'/'">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>班级</td>
+            <td>操作</td>
+        </tr>
+        <tr th:each="stu :${list}">
+            <td th:text="${stu.id}">编号</td>
+            <td th:text="${stu.stuName}">姓名</td>
+            <td th:text="${stu.age}">年龄</td>
+            <td th:text="${stu.sex}">性别</td>
+            <td th:text="${stu.tcName}">班级</td>
+            <td><!--@{'doc/'+${modules.moduleId}+'/'+${item.gradeId}+'/list'}-->
+              <a th:href="@{'stu/toupdate/'+${stu.id}}">修改</a>
+              <a th:href="@{'stu/del/'+${stu.id}}">删除</a>
+            </td>
+        </tr>
+    </table>
+    <a href="stu/toadd">添加</a>
+</body>
+</html>

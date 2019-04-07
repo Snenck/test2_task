@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/stu_consumer/stu_consumer.iml" filepath="$PROJECT_DIR$/stu_consumer/stu_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/student_server/student_server.iml" filepath="$PROJECT_DIR$/student_server/student_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tclass_consumer/tclass_consumer.iml" filepath="$PROJECT_DIR$/tclass_consumer/tclass_consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tclass_server/tclass_server.iml" filepath="$PROJECT_DIR$/tclass_server/tclass_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test2.iml" filepath="$PROJECT_DIR$/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test2_api/test2_api.iml" filepath="$PROJECT_DIR$/test2_api/test2_api.iml" />
+    </modules>
+  </component>
+</project>

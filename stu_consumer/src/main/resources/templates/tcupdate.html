@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="${#request.getContextPath()}+'/'">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="tc/update" method="post">
+        <input type="hidden" name="id" th:value="${tc.id}"><br>
+       班级名称： <input type="text" name="name" th:value="${tc.name}"><br>
+        <input type="submit" th:value="修改">
+    </form>
+</body>
+</html>

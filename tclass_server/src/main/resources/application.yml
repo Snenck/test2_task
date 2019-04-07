@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 123
+    url: jdbc:mysql:///tclass
+    driver-class-name: com.mysql.jdbc.Driver
+dubbo:
+  application:
+    name: tClass_server
+  registry:
+    address: zookeeper://192.168.84.129:2181
+server:
+  port: 8887

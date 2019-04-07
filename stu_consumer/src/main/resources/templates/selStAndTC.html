@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base th:href="${#request.getContextPath()+'/'}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="stu/selStuByTCName" method="post">
+       班级名称: <input type="text" name="name" th:value="${name}">
+        <input type="submit" value="查询">
+    </form>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+            <td>班级</td>
+        </tr>
+        <tr th:each="stu :${list}">
+            <td th:text="${stu.id}">编号</td>
+            <td th:text="${stu.stuName}">姓名</td>
+            <td th:text="${stu.age}">年龄</td>
+            <td th:text="${stu.sex}">性别</td>
+            <td th:text="${stu.tcName}">班级</td>
+        </tr>
+        <tr>
+            <td th:text="${msg}" colspan="5">暂无数据</td>
+        </tr>
+    </table>
+</body>
+</html>
