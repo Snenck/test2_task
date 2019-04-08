@@ -28,7 +28,8 @@ public class TClassServiceImpl implements ITClassService {
 
     @Override
     public int updateTClass(TClass tClass) {
-        return itClassDao.update(tClass,null);
+
+        return itClassDao.updateById(tClass);
     }
 
     @Override

@@ -13,4 +13,8 @@ public class MyController {
     public String toTCAndStu(){
         return "selStAndTC";
     }
+    @RequestMapping("/")
+    public String toHome(){
+        return "home";
+    }
 }
